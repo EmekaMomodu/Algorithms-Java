@@ -8,17 +8,33 @@ package com.emekamomodu.microsoft;
 public class Solution {
 
     /**
-     * Time complexity: O(N)
+     * Given a string text, you want to use the characters of text to form as many instances of the word "balloon" as possible.
+     * You can use each character in text at most once. Return the maximum number of instances that can be formed.
      *
-     * We iterate over all the characters of string text which requires NN operations.
+     * Example 1:
+     * Input: text = "nlaebolko"
+     * Output: 1
      *
-     * Space complexity: O(1)
+     * Example 2:
+     * Input: text = "loonbalxballpoon"
+     * Output: 2
      *
-     * All we need is the 55 variables to store the frequency of characters. Hence the space complexity is constant.
-     *
-     * */
+     * Example 3:
+     * Input: text = "leetcode"
+     * Output: 0
+     */
 
     public int solution(String S) {
+
+
+//         * Time complexity: O(N)
+//         *
+//         * We iterate over all the characters of string text which requires NN operations.
+//         *
+//         * Space complexity: O(1)
+//         *
+//         * All we need is the 55 variables to store the frequency of characters. Hence the space complexity is constant.
+
         int bCount = 0, aCount = 0, lCount = 0, oCount = 0, nCount = 0;
 
         // Count the frequency of all the five characters
