@@ -6,10 +6,13 @@ import java.util.Set;
 /**
  * Write a simple and efficient Java >= 8 program that returns the smallest non-occurring
  * integer in a given Array.
- * E.g: Given an Array1 = [1, 3, 6, 4, 1, 2] returns 5, and Array2 = [5, -1, -3] returns 1
+ * E.g: Given an Array1 = [1, 3, 6, 4, 1, 2] returns 5,
+ * and Array2 = [5, -1, -3] returns 1
  * */
 public class Solution {
 
+    // Time complexity: linear O(2n) which resolves to O(n) where n = length of input array
+    // Space complexity: linear O(m) where m = size of all positive integers in the array | m = n if all integers are positive
     private final Set<Integer> positiveIntegers = new HashSet<>();
 
     public int findSmallestNonOccurringPositiveInteger(int[] inputArray) {
